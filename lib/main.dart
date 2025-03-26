@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_edu_first_task/pages/boards.dart';
 import 'package:flutter_edu_first_task/pages/home.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Color(0xffF8F8F8),
       ),
-      home: const Home(),
+      home: const Boards(),
     );
   }
 }
