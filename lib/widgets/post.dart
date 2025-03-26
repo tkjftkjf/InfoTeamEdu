@@ -8,6 +8,7 @@ class Post extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(bottom: 20),
       width: double.infinity,
       padding: EdgeInsets.fromLTRB(14, 15, 14, 14),
       decoration: BoxDecoration(
@@ -44,7 +45,6 @@ class Post extends StatelessWidget {
                   color: Color(0xff252525),
                 ),
               ),
-          SizedBox(height: 20),
         ],
       ),
     );
