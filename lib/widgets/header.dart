@@ -8,6 +8,7 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      automaticallyImplyLeading: false,
       title: Text("나의 게시판 앱", style: TextStyle(fontWeight: FontWeight.w700)),
       actions: [
         GestureDetector(child: SvgPicture.asset(Assets.icons.search)),
