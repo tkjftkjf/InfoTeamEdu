@@ -6,7 +6,12 @@ class PostInfoHeader extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      leading: GestureDetector(child: Icon(Icons.arrow_back_ios_new_rounded)),
+      leading: GestureDetector(
+        onTap: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.arrow_back_ios_new_rounded),
+      ),
       title: Text("나의 게시판 앱", style: TextStyle(fontWeight: FontWeight.w700)),
       centerTitle: true,
     );

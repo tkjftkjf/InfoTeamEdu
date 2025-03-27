@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_edu_first_task/widgets/navbar.dart';
 import 'package:flutter_edu_first_task/widgets/post_info_header.dart';
 import 'package:flutter_edu_first_task/widgets/tag_box.dart';
 
 class PostInfo extends StatelessWidget {
-  const PostInfo({super.key});
-  static List<String> tags = ['#A', '#B', '#C'];
+  PostInfo({super.key});
+  final List<String> tags = ['#A', '#B', '#C'];
 
   @override
   Widget build(BuildContext context) {
@@ -73,10 +72,6 @@ class PostInfo extends StatelessWidget {
             ),
           ),
         ],
-      ),
-      bottomNavigationBar: Navbar(
-        currentPageIndex: 0,
-        onTap: (int index) => index,
       ),
     );
   }
