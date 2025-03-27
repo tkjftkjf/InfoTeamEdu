@@ -74,7 +74,10 @@ class PostInfo extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: Navbar(),
+      bottomNavigationBar: Navbar(
+        currentPageIndex: 0,
+        onTap: (int index) => index,
+      ),
     );
   }
 }
