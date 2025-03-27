@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_edu_first_task/widgets/post.dart';
+import 'package:flutter_edu_first_task/widgets/post_widget.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_edu_first_task/pages/post_info.dart';
+import 'package:flutter_edu_first_task/pages/post.dart';
 
 class Post extends StatelessWidget {
   const Post({super.key, required this.hasImage});
