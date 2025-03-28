@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_edu_first_task/pages/boards.dart';
-import 'package:flutter_edu_first_task/pages/home.dart';
+import 'package:flutter_edu_first_task/pages/boards_page.dart';
+import 'package:flutter_edu_first_task/pages/home_page.dart';
 import 'package:flutter_edu_first_task/widgets/header.dart';
 import 'package:flutter_edu_first_task/widgets/navbar.dart';
 
