@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_edu_first_task/widgets/post_info_header.dart';
 import 'package:flutter_edu_first_task/widgets/tag_box.dart';
 
-class PostInfo extends StatelessWidget {
-  PostInfo({super.key});
+class PostInfoPage extends StatelessWidget {
+  PostInfoPage({super.key});
   final List<String> tags = ['#A', '#B', '#C'];
 
   @override

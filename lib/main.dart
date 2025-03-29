@@ -33,7 +33,7 @@ class MyHome extends StatefulWidget {
 
 class _MyHomeState extends State<MyHome> {
   int _currentIndex = 0;
-  final List<Widget> _pages = [Home(), Boards(), Profile()];
+  final List<Widget> _pages = [HomePage(), BoardsPage(), Profile()];
 
   void _onTap(int index) {
     setState(() {

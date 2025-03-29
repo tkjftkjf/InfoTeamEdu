@@ -12,7 +12,7 @@ class Post extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => PostInfo()),
+          MaterialPageRoute(builder: (context) => PostInfoPage()),
         );
       },
       child: Container(
