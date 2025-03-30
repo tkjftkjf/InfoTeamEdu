@@ -49,7 +49,9 @@ class PostInfoPage extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 10),
-                    Row(children: tags.map((tag) => TagBox(tag: tag)).toList()),
+                    Row(
+                      children: tags.map((tag) => TagWidget(tag: tag)).toList(),
+                    ),
                   ],
                 ),
                 Column(

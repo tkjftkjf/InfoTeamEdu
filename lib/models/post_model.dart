@@ -12,6 +12,7 @@ class Post with _$Post {
     required String id,
     required String title,
     required List<String> tags,
+    required String body,
     required BoardSummary board,
     required String createdAt,
     required UserModel createdBy,

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_edu_first_task/models/post_model.dart';
 import 'package:flutter_edu_first_task/pages/post_page.dart';
+import 'dart:convert';
 
-class Post extends StatelessWidget {
-  const Post({super.key, required this.hasImage});
-
-  final bool hasImage;
+class PostWidget extends StatelessWidget {
+  const PostWidget({super.key, required this.post});
+  final Post post;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,7 @@ class Post extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "게시글 제목",
+              post.title,
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
@@ -35,18 +36,18 @@ class Post extends StatelessWidget {
               ),
             ),
             SizedBox(height: 7),
-            hasImage
+            (post.images.isNotEmpty)
                 ? ClipRRect(
                   borderRadius: BorderRadius.circular(10),
-                  child: Image.network(
+                  child: Image.memory(
                     width: double.infinity,
                     height: 250,
                     fit: BoxFit.cover,
-                    "https://www.fakemagazine.kr/content/images/size/w1000/2023/02/ramune2020-1-copy_nowatermark.jpg",
+                    base64Decode(post.images.first.image),
                   ),
                 )
                 : Text(
-                  "공지 내용",
+                  post.body,
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w400,
