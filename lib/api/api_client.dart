@@ -11,10 +11,10 @@ abstract class ApiClient {
   factory ApiClient(Dio dio, {String baseUrl}) = _ApiClient;
 
   @GET("/boards")
-  Future<BoardList> getBoards();
+  Future<BoardList> getBoardList();
 
   @GET("/posts")
-  Future<PostList> getPosts();
+  Future<PostList> getPostList();
 
   @GET("/post/{uuid}")
   Future<Post> getPost(@Path('uuid') String uuid);

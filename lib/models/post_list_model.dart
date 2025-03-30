@@ -6,7 +6,7 @@ part 'post_list_model.g.dart';
 
 @freezed
 class PostList with _$PostList {
-  const factory PostList({required int count, required List<Post> posts}) =
+  const factory PostList({required int count, required List<Post> list}) =
       _PostList;
 
   factory PostList.fromJson(Map<String, dynamic> json) =>

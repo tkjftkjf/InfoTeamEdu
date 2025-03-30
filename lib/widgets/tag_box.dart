@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TagBox extends StatelessWidget {
-  const TagBox({super.key, required this.tag});
+class TagWidget extends StatelessWidget {
+  const TagWidget({super.key, required this.tag});
   final String tag;
   @override
   Widget build(BuildContext context) {

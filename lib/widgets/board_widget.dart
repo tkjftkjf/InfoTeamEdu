@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_edu_first_task/models/board_summary_model.dart';
 
-class Board extends StatelessWidget {
-  const Board({super.key});
+class BoardWidget extends StatelessWidget {
+  const BoardWidget({super.key, required this.boardSummary});
+  final BoardSummary boardSummary;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,7 @@ class Board extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            "게시물 제목",
+            boardSummary.title,
             style: TextStyle(
               color: const Color(0xFF252525),
               fontSize: 16,

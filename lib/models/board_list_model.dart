@@ -8,7 +8,7 @@ part 'board_list_model.g.dart';
 class BoardList with _$BoardList {
   const factory BoardList({
     required int count,
-    required List<BoardSummary> boards,
+    required List<BoardSummary> list,
   }) = _BoardList;
 
   factory BoardList.fromJson(Map<String, dynamic> json) =>
