@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_edu_first_task/models/post_model.dart';
+import 'package:flutter_edu_first_task/data/models/post_model.dart';
 import 'package:flutter_edu_first_task/pages/post_page.dart';
 import 'dart:convert';
 

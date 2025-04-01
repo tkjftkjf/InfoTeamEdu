@@ -1,4 +1,4 @@
-import 'package:flutter_edu_first_task/models/board_summary_model.dart';
+import 'package:flutter_edu_first_task/data/models/board_summary_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'board_list_model.freezed.dart';

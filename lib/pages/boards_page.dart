@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_edu_first_task/api/api_client.dart';
-import 'package:flutter_edu_first_task/models/board_list_model.dart';
-import 'package:flutter_edu_first_task/models/board_summary_model.dart';
+import 'package:flutter_edu_first_task/data/models/board_list_model.dart';
+import 'package:flutter_edu_first_task/data/models/board_summary_model.dart';
 import 'package:flutter_edu_first_task/widgets/board_widget.dart';
 
 class BoardsPage extends StatelessWidget {

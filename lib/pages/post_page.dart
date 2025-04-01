@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_edu_first_task/models/post_model.dart';
+import 'package:flutter_edu_first_task/data/models/post_model.dart';
 import 'package:flutter_edu_first_task/widgets/post_info_header.dart';
 import 'package:flutter_edu_first_task/widgets/tag_box.dart';
 

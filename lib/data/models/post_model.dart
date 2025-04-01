@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:flutter_edu_first_task/models/board_summary_model.dart';
-import 'package:flutter_edu_first_task/models/user_model.dart';
-import 'package:flutter_edu_first_task/models/image_model.dart';
+import 'package:flutter_edu_first_task/data/models/board_summary_model.dart';
+import 'package:flutter_edu_first_task/data/models/user_model.dart';
+import 'package:flutter_edu_first_task/data/models/image_model.dart';
 
 part 'post_model.freezed.dart';
 part 'post_model.g.dart';

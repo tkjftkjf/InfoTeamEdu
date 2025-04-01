@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_edu_first_task/api/api_client.dart';
-import 'package:flutter_edu_first_task/models/post_list_model.dart';
-import 'package:flutter_edu_first_task/models/post_model.dart';
+import 'package:flutter_edu_first_task/data/models/post_list_model.dart';
+import 'package:flutter_edu_first_task/data/models/post_model.dart';
 import 'package:flutter_edu_first_task/widgets/post_widget.dart';
 
 class HomePage extends StatelessWidget {
