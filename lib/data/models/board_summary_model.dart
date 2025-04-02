@@ -5,15 +5,15 @@ part 'board_summary_model.freezed.dart';
 part 'board_summary_model.g.dart';
 
 @freezed
-class BoardSummary with _$BoardSummary {
-  const BoardSummary._();
-  factory BoardSummary({
+class BoardSummaryModel with _$BoardSummaryModel {
+  const BoardSummaryModel._();
+  factory BoardSummaryModel({
     required String id,
     required String title,
     required String createdAt,
     required UserModel creator,
-  }) = _BoardSummary;
+  }) = _BoardSummaryModel;
 
-  factory BoardSummary.fromJson(Map<String, dynamic> json) =>
-      _$BoardSummaryFromJson(json);
+  factory BoardSummaryModel.fromJson(Map<String, dynamic> json) =>
+      _$BoardSummaryModelFromJson(json);
 }

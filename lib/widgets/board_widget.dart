@@ -3,7 +3,7 @@ import 'package:flutter_edu_first_task/data/models/board_summary_model.dart';
 
 class BoardWidget extends StatelessWidget {
   const BoardWidget({super.key, required this.boardSummary});
-  final BoardSummary boardSummary;
+  final BoardSummaryModel boardSummary;
 
   @override
   Widget build(BuildContext context) {

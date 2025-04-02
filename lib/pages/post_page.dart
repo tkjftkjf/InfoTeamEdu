@@ -7,7 +7,7 @@ import 'package:flutter_edu_first_task/widgets/tag_box.dart';
 
 class PostInfoPage extends StatelessWidget {
   const PostInfoPage({super.key, required this.post});
-  final Post post;
+  final PostModel post;
 
   @override
   Widget build(BuildContext context) {

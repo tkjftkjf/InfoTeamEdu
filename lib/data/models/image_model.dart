@@ -4,8 +4,10 @@ part 'image_model.freezed.dart';
 part 'image_model.g.dart';
 
 @freezed
-class Image with _$Image {
-  const factory Image({required String image, required String id}) = _Image;
+class ImageModel with _$ImageModel {
+  const factory ImageModel({required String image, required String id}) =
+      _ImageModel;
 
-  factory Image.fromJson(Map<String, dynamic> json) => _$ImageFromJson(json);
+  factory ImageModel.fromJson(Map<String, dynamic> json) =>
+      _$ImageModelFromJson(json);
 }

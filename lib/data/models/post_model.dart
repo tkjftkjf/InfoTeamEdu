@@ -7,17 +7,18 @@ part 'post_model.freezed.dart';
 part 'post_model.g.dart';
 
 @freezed
-class Post with _$Post {
-  const factory Post({
+class PostModel with _$PostModel {
+  const factory PostModel({
     required String id,
     required String title,
     required List<String> tags,
     required String body,
-    required BoardSummary board,
+    required BoardSummaryModel board,
     required String createdAt,
     required UserModel createdBy,
-    required List<Image> images,
-  }) = _Post;
+    required List<ImageModel> images,
+  }) = _PostModel;
 
-  factory Post.fromJson(Map<String, dynamic> json) => _$PostFromJson(json);
+  factory PostModel.fromJson(Map<String, dynamic> json) =>
+      _$PostModelFromJson(json);
 }

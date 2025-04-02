@@ -5,12 +5,12 @@ part 'board_list_model.freezed.dart';
 part 'board_list_model.g.dart';
 
 @freezed
-class BoardList with _$BoardList {
-  const factory BoardList({
+class BoardListModel with _$BoardListModel {
+  const factory BoardListModel({
     required int count,
-    required List<BoardSummary> list,
-  }) = _BoardList;
+    required List<BoardSummaryModel> list,
+  }) = _BoardListModel;
 
-  factory BoardList.fromJson(Map<String, dynamic> json) =>
-      _$BoardListFromJson(json);
+  factory BoardListModel.fromJson(Map<String, dynamic> json) =>
+      _$BoardListModelFromJson(json);
 }

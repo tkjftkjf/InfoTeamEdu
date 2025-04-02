@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(20),
-      child: FutureBuilder<PostList>(
+      child: FutureBuilder<PostListModel>(
         future: apiClient.getPostList(),
         builder: (context, snapshot) {
           /* print(snapshot.error);
@@ -22,9 +22,9 @@ class HomePage extends StatelessWidget {
           DioException [connection error]: The connection errored: The XMLHttpRequest onError callback was called. This typically indicates an error on the network layer. This indicates an error which most likely cannot be solved by the library.
            */
           if (snapshot.hasData) {
-            PostList? postList = snapshot.data;
+            PostListModel? postList = snapshot.data;
             if (postList != null) {
-              List<Post> posts = postList.list;
+              List<PostModel> posts = postList.list;
               return ListView.builder(
                 itemCount: postList.count,
                 itemBuilder: (context, index) {

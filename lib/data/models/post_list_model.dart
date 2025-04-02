@@ -5,10 +5,12 @@ part 'post_list_model.freezed.dart';
 part 'post_list_model.g.dart';
 
 @freezed
-class PostList with _$PostList {
-  const factory PostList({required int count, required List<Post> list}) =
-      _PostList;
+class PostListModel with _$PostListModel {
+  const factory PostListModel({
+    required int count,
+    required List<PostModel> list,
+  }) = _PostListModel;
 
-  factory PostList.fromJson(Map<String, dynamic> json) =>
-      _$PostListFromJson(json);
+  factory PostListModel.fromJson(Map<String, dynamic> json) =>
+      _$PostListModelFromJson(json);
 }

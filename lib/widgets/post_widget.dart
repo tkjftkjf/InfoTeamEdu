@@ -5,7 +5,7 @@ import 'dart:convert';
 
 class PostWidget extends StatelessWidget {
   const PostWidget({super.key, required this.post});
-  final Post post;
+  final PostModel post;
 
   @override
   Widget build(BuildContext context) {
