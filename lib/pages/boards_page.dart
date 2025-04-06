@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_edu_first_task/api/api_client.dart';
 import 'package:flutter_edu_first_task/data/models/board_list_model.dart';
 import 'package:flutter_edu_first_task/data/models/board_summary_model.dart';
-import 'package:flutter_edu_first_task/widgets/board_widget.dart';
+import 'package:flutter_edu_first_task/widgets/navigate_button_widget.dart';
 
 class BoardsPage extends StatelessWidget {
   BoardsPage({super.key});
@@ -28,7 +28,7 @@ class BoardsPage extends StatelessWidget {
               return ListView.builder(
                 itemCount: boardList.count,
                 itemBuilder: (context, index) {
-                  return BoardWidget(boardSummary: boards[index]);
+                  return NavigateButtonWidget(buttonName: boards[index].title);
                 },
               );
             }
