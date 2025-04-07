@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_edu_first_task/data/models/post_model.dart';
-import 'package:flutter_edu_first_task/widgets/post_info_header.dart';
+import 'package:flutter_edu_first_task/widgets/header.dart';
 import 'package:flutter_edu_first_task/widgets/tag_box.dart';
 
 class PostInfoPage extends StatelessWidget {
@@ -12,11 +12,11 @@ class PostInfoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PostInfoHeader(),
+      appBar: Header(title: "게시글", isDepth: true),
       body: ListView(
         children: [
           Container(
-            padding: EdgeInsets.all(20),
+            padding: EdgeInsets.all(32),
             child: Column(
               children: [
                 Column(

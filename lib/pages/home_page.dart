@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: EdgeInsets.all(18),
       child: RefreshIndicator(
         onRefresh: () async {
           _postListBloc.add(const PostListEvent.load());

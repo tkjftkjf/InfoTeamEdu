@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_edu_first_task/pages/boards_page.dart';
 import 'package:flutter_edu_first_task/pages/home_page.dart';
+import 'package:flutter_edu_first_task/pages/profile_page.dart';
 import 'package:flutter_edu_first_task/widgets/header.dart';
 import 'package:flutter_edu_first_task/widgets/navbar.dart';
 
@@ -33,7 +34,7 @@ class MyHome extends StatefulWidget {
 
 class _MyHomeState extends State<MyHome> {
   int _currentIndex = 0;
-  final List<Widget> _pages = [HomePage(), BoardsPage(), Profile()];
+  final List<Widget> _pages = [HomePage(), BoardsPage(), ProfilePage()];
 
   void _onTap(int index) {
     setState(() {
@@ -44,7 +45,7 @@ class _MyHomeState extends State<MyHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: Header(),
+      appBar: Header(title: "나의 게시판 앱"),
       body: _pages[_currentIndex],
       bottomNavigationBar: Navbar(
         currentPageIndex: _currentIndex,
@@ -55,14 +56,3 @@ class _MyHomeState extends State<MyHome> {
 }
 
 /* 더미 */
-class Profile extends StatelessWidget {
-  const Profile({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Text(
-      "이곳은 프로필 페이지 입니다.",
-      style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600),
-    );
-  }
-}

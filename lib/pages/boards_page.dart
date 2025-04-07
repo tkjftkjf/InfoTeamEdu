@@ -12,7 +12,7 @@ class BoardsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: EdgeInsets.all(13),
       child: FutureBuilder<BoardListModel>(
         future: apiClient.getBoardList(),
         builder: (context, snapshot) {
